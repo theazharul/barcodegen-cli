@@ -26,7 +26,7 @@ def run(business, code, name, price):
     # Add text to the image
     image_with_text = add_text(barcode_img_with_margin, (0, 190), f"{business}", font_size=22)
     image_with_text = add_text(image_with_text, (0, 110), f"{name}", font_size=16)
-    image_with_text = add_text(image_with_text, (0, -170), f"Price: {price}", font_size=20)
+    image_with_text = add_text(image_with_text, (0, -170), f"Price: {price}", font_size=20, font_path='arialbd.ttf')
 
     # Save the barcode image
     image_with_text.save(f'{code}.png')
